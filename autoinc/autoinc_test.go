@@ -2,7 +2,7 @@ package autoinc_test
 
 import (
 	"testing"
-	autoinc "github.com/coder-zhuyu/go-utils/autoinc"
+	"github.com/coder-zhuyu/go-utils/autoinc"
 )
 
 func TestAutoInc_Id(t *testing.T) {
