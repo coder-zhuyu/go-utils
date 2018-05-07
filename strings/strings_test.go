@@ -1,19 +1,18 @@
-package strings_test
+package strings
 
 import (
 	"testing"
-	strUtils "github.com/coder-zhuyu/go-utils/strings"
 )
 
 func TestRuneLen(t *testing.T) {
 	s := "你好，世界!"
-	lth := strUtils.RuneLen(s)
+	lth := RuneLen(s)
 	t.Log("len=", lth)
 }
 
 func TestRuneSubString(t *testing.T) {
 	s := "你好，世界!"
-	t.Log("sub=", strUtils.RuneSubString(s, 0, 6))
-	t.Log("sub=", strUtils.RuneSubString(s, 0, 10))
-	t.Log("sub=", strUtils.RuneSubString(s, 7, 10))
+	t.Log("sub=", RuneSubString(s, 0, 6))
+	t.Log("sub=", RuneSubString(s, 0, 10))
+	t.Log("sub=", RuneSubString(s, 7, 10))
 }
